@@ -26,7 +26,7 @@ background-size: cover;
 
 #navbar {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 #navbar a {
@@ -54,7 +54,8 @@ background-size: cover;
 
 
 #form input[type="text"],
-#form input[type="email"] 
+#form input[type="email"]
+
 {
   width: 100%;
   padding: 10px 12px;
@@ -64,6 +65,7 @@ background-size: cover;
   box-sizing: border-box;
   transition: border-color 0.2s;
 }
+
 #id{
      width: 100%;
   padding: 10px 12px;
@@ -71,9 +73,8 @@ background-size: cover;
   border: 1px solid #1955bc;
   border-radius: 4px;
   box-sizing: border-box;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s;  
 }
-
 #form input:focus {
   border-color: #4a3405;
   outline: none;
@@ -116,7 +117,7 @@ background-size: cover;
 
 #head {
   color: #2c3e50;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 
@@ -129,7 +130,7 @@ background-size: cover;
 
 #links a {
   text-decoration: none;
-  color: #007bff;
+  color: #304e6d;
   font-weight: bold;
   padding: 10px 20px;
   border: 2px solid #007bff;
@@ -138,7 +139,7 @@ background-size: cover;
 }
 
 #links a:hover {
-  background: #007bff;
+  background: #042344;
   color: #fff;
 }
 

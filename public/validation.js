@@ -2,7 +2,7 @@
  const checkValidation=()=>{
 
      const email=document.getElementById('email').value.trim();
-     const phone=document.getElementById('phone').value.trim()
+
        const error = document.getElementById('error');
        error.textContent = ''; 
       
@@ -13,11 +13,5 @@
         return false
      }
 
-      const phoneCheck='/^[0-9]{10}$/'
-      if(!phoneCheck.test(phone)){
-      
-        error.textContent='please enter valid phone'
-        return false
-      }
       return true
  }
