@@ -55,13 +55,14 @@ const assignTask = async (req, res) => {
 
 const download = async (req, res) => {
   const tasks = await Task.query().withGraphFetched('user');
-
+console.log(tasks)
   const data = tasks.map(task => ({
     TaskTitle: task.title,
     Description: task.description,
     userName: task.user?.name,     
     Email: task.user?.email
   }));
+  console.log(data)
 
   const worksheet = XLSX.utils.json_to_sheet(data);
   const workbook = XLSX.utils.book_new();
