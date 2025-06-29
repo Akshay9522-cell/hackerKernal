@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="heading">Create User</h1>
+<div id="navbar">
+  <a href="/">home</a>
+<a href="/user">user</a>
+<a href="/task">task</a>
+<a href="/download">Download Excel</a>
+</div>
+
+<form method="post" action="/user" id="form" onsubmit="return checkValidation()">
+
+  ID:<input type="number" name="id" id="id" /> <br>
+  Name:<input type="text" name="name" id="name" /> <br>
+  Email:<input type="email" name="email" id="email"/> <br>
+
+
+  <button type="submit" id="btn">save</button>
+
+</form>
+ 
+<script src="/validation.js"></script> 
+
+</body>
+</html>

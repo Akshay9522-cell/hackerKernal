@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 id="heading">Assign task</h1>
+
+    
+<div id="navbar">
+  <a href="/">home</a>
+<a href="/user">user</a>
+<a href="/task">task</a>
+<a href="/download">Download Excel</a>
+</div>
+
+
+<form method="post" action="/task" id="form">
+   
+   Title:<input type="text" name="title" id="email"/>
+   Desc:<input type="text" name="description" id="phone"/>
+
+  Users:<select  name="user_id" id="user">
+  {{#each data}}
+    <option value="{{this.id}}" >{{this.name}}</option>
+  {{/each}}
+</select>
+   <button type="submit" id="btn">Assign task</button>
+</form>
+
+
+
+</body>
+</html>
